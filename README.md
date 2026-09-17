@@ -107,6 +107,7 @@ EfficientNetB0 and ViT-B/16 consistently led across accuracy, weighted F1, and m
 
 
 ![Model Size Comparison](img/parameter_count_comparison.png)
+![Training Time Comparison](img/training_time_comparison.png)
 
 ### Final test set performance — EfficientNetB0 (winning model)
 
@@ -116,11 +117,16 @@ EfficientNetB0 and ViT-B/16 consistently led across accuracy, weighted F1, and m
 | Weighted F1 | **70.23%** |
 | Macro F1 | **69.39%** |
 
+![Accuracy, Weighted F1, and Macro F1 Comparison](img/combined_test_metrics.png)
+
 EfficientNetB0 outperformed the much larger ViT-B/16 while using roughly **20× fewer parameters** — making it the clear choice for a real-time, deployable application.
 
 **Per-class insight:**
 - Strongest class: *Happy* (87.3% accuracy) — likely reflecting its dominance in the training data
 - Weakest class: *Fearful* (52.6% accuracy) — frequently confused with *Sad* and *Angry*, which share overlapping facial muscle patterns
+
+![EfficientNetB0 Confusion Matrix](img/confusion_matrix.png)
+![EfficientNetB0 per Class Accuracy](img/per_class_accuracy.png)
 
 ## Ethical Considerations
 
