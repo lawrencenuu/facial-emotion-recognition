@@ -104,7 +104,7 @@ EfficientNetB0 and ViT-B/16 consistently led across accuracy, weighted F1, and m
 | CustomCNN | 1.24M | Fastest to train, but lowest accuracy — pretrained features clearly matter |
 | ViT-B/16 | 86M | Largest and slowest to train (~440 min); strong but not the top performer |
 | **EfficientNetB0** | **~5M** | **Best overall accuracy-to-efficiency trade-off** |
-
+![Model Size Comparison](img/parameter_count_comparison.png)
 ### Final test set performance — EfficientNetB0 (winning model)
 
 | Metric | Score |
